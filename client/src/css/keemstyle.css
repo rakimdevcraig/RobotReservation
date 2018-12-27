@@ -1,0 +1,12 @@
+.title {
+    text-align: center
+}
+
+textarea{
+    height: 100px;
+    width: 400px;
+}
+
+.available{
+    color: red;
+}
