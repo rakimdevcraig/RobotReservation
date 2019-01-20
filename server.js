@@ -1,10 +1,11 @@
 const express = require('express');
 const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
-const path = require('path');
 const cors = require('cors');
 
 const issues = require('./routes/api/issues');
+const robots = require('./routes/api/robots');
+
 
 const app = express();
 app.use(cors());
@@ -23,6 +24,7 @@ mongoose
 
 // Use Routes
 app.use('/api/issues', issues);
+app.use('/api/robots', robots);
 
 const port = process.env.PORT || 4000;
 
