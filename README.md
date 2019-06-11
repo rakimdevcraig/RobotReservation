@@ -1,4 +1,4 @@
-Full-Stack Roulette Application This is a full-stack application that will allow users to see if a robot is available and if the robot is available gives users the ability to reserve it. It also gives users the ability to report any problems that are discovered with robots anonymously.
+This is a full-stack application built with React that will allow users to see if a robot is available and if the robot is available gives users the ability to reserve it. It also gives users the ability to report any problems that are discovered with robots.
 
 How It's Made: Tech used: React, Node-JS, MongoDB, Express 
 
