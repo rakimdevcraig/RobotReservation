@@ -21,7 +21,7 @@ class App extends React.Component {
     //if you didn't reserve the robot you shouldn't be able to release
     //when a robot is reserved all users are notified
     componentDidMount() {
-        fetch('http://localhost:4000/api/robots', {
+        fetch('https://robotbackend3.herokuapp.com/api/robots', {
             method: 'Get',
         })
             .then(res => res.json())
@@ -45,7 +45,7 @@ class App extends React.Component {
                 } else {
                     robots[i].Status = "Reserved"
                     //only update the robot if it hasn't been taken
-                    fetch('http://localhost:4000/api/robots', {
+                    fetch('https://robotbackend3.herokuapp.com/api/robots', {
                         method: 'POST',
                         body: JSON.stringify(robots[i]),
                         headers: {
@@ -74,7 +74,7 @@ class App extends React.Component {
                     alert('Sorry Already Free')
                 } else {
                     robots[i].Status = "Available"
-                    fetch('http://localhost:4000/api/robots', {
+                    fetch('https://robotbackend3.herokuapp.com/api/robots', {
                         method: 'POST',
                         body: JSON.stringify(robots[i]),
                         headers: {
